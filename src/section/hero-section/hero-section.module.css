@@ -9,27 +9,44 @@
 .heroContent {
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    max-width: 600px;
+    width: auto;
 }
 
-.heroCard{
-
-}
 
 @media screen and (max-width: 768px) {
+    .heroSection {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
 
-        .heroSection {
-            flex-direction: column;
-            height: auto;
-            padding: 20px;
-        }
 
-        .heroContent {
-            align-items: center;
-            text-align: center;
-        }
+    .heroContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
 
+    .heroCard {
+        width: 90%;
+    }
+
+    .heroTitle {
+    }
+
+    .heroImage {
+        width: 90%;
+        height: auto;
+    }
 }
