@@ -1,0 +1,31 @@
+.heroSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+}
+
+.heroContent {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 600px;
+}
+
+@media screen and (max-width: 768px) {
+
+        .heroSection {
+            flex-direction: column;
+            height: auto;
+            padding: 20px;
+        }
+
+        .heroContent {
+            align-items: center;
+            text-align: center;
+        }
+
+}
