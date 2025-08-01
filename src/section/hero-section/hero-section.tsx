@@ -17,8 +17,10 @@ export default function HeroSection() {
               </Typography>
             }
             subheader={
-              <Typography variant="body2">
-                Discover amazing content and connect with our community.
+              <Typography variant="body2" className={styles.heroSubtitle}>
+                Passionate about crafting clean, efficient code and building
+                seamless user experiences. Always eager to learn, solve
+                challenges, and bring ideas to life on the web.
               </Typography>
             }
           />
