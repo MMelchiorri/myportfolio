@@ -19,6 +19,7 @@
     position: relative;
     display: inline-flex;
     transition: color 0.3s ease;
+    margin-right: 20px;
 
 }
 
