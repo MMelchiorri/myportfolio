@@ -38,6 +38,7 @@ export default function HeroSection() {
             variant="h4"
             ref={titleRef}
             className={styles.heroTitle}
+            id={"heroSection"}
             sx={{
               fontFamily: "Montserrat-regular",
               color: "#134E4A",
