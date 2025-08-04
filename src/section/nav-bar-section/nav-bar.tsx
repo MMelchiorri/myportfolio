@@ -6,27 +6,38 @@ import Link from "next/link";
 import HomeIcon from "@mui/icons-material/Home";
 import WorkIcon from "@mui/icons-material/Work";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 
 const NavBar: React.FC = () => {
+  const [menuOpen, setMenuOpen] = React.useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen((prev) => !prev);
+  };
+
   return (
-    <div
-      className={styles.container}
-      role="navigation"
-      aria-label="Main Navigation"
-    >
+    <nav className={styles.container}>
       <div className={styles.logo}></div>
-      <div className={styles.information}>
-        <Link href="#heroSection" className={styles.link}>
-          <HomeIcon style={{ marginRight: "1rem" }} />
+
+      <div className={styles.burger} onClick={toggleMenu}>
+        {menuOpen ? <CloseIcon /> : <MenuIcon />}
+      </div>
+
+      <div
+        className={`${styles.information} ${menuOpen ? styles.showMenu : ""}`}
+      >
+        <Link href="#heroSection" className={styles.link} onClick={toggleMenu}>
+          <HomeIcon style={{ marginRight: "0.5rem" }} /> About
         </Link>
-        <Link href="#myProject" className={styles.link}>
-          <WorkIcon style={{ marginRight: "1rem" }} />
+        <Link href="#myProject" className={styles.link} onClick={toggleMenu}>
+          <WorkIcon style={{ marginRight: "0.5rem" }} /> My Projects
         </Link>
-        <Link href="#contact" className={styles.link}>
-          <ContactMailIcon style={{ marginRight: "1rem" }} />
+        <Link href="#contact" className={styles.link} onClick={toggleMenu}>
+          <ContactMailIcon style={{ marginRight: "0.5rem" }} /> Contact
         </Link>
       </div>
-    </div>
+    </nav>
   );
 };
 

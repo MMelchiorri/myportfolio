@@ -4,6 +4,8 @@ body {
     color: #1A1A1A;
 }
 
-html{
+html, body{
     scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
 }
