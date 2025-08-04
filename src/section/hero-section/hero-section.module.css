@@ -22,10 +22,12 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.heroSubtitle {
-    font-size: 1.2rem;
-    margin-top: 10px;
+.heroTitle{
+    font-size: 120px !important;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
+
 
 @media screen and (max-width: 768px) {
     .heroSection {
@@ -47,6 +49,11 @@
         width: 100%;
         height: 100%;
         justify-content: center;
+    }
+
+    .heroTitle{
+        font-size: 60px !important;
+        margin-bottom: 1rem;
     }
 
     .heroCard {
