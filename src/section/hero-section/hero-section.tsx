@@ -58,11 +58,11 @@ export default function HeroSection() {
             }}
           >
             Mi chiamo Marco, sono nello sviluppo backend da 4 anni, lavoro con
-            Node.js, TypeScript, React, Nextjs, MongoDB e MySQL. Mi piace creare
-            API performanti, scrivere codice pulito e collaborare su progetti
-            sfidanti. Fuori dal codice, suono la batteria, leggo e faccio
-            escursionismo. Amo anche il basket, che mi ha insegnato disciplina,
-            collaborazione e resilienza.
+            Node.js, TypeScript, React, Next.js, MongoDB e MySQL. Mi piace
+            creare API performanti, scrivere codice pulito e collaborare su
+            progetti sfidanti. Fuori dal codice, suono la batteria, leggo,
+            faccio escursionismo e alleno una squadra di basket. Amo questo
+            sport, che mi ha insegnato disciplina, collaborazione e resilienza.
           </Typography>
         </Paper>
 
