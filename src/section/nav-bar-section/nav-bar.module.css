@@ -17,8 +17,9 @@
     text-decoration: none;
     font-weight: 500;
     position: relative;
-    display: inline-block;
+    display: inline-flex;
     transition: color 0.3s ease;
+
 }
 
 .link::after {
