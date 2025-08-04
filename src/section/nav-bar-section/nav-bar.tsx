@@ -4,9 +4,13 @@ import React from "react";
 import styles from "./nav-bar.module.css";
 import Link from "next/link";
 
-const NavBar: React.ElementType = () => {
+const NavBar: React.FC = () => {
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}
+      role="navigation"
+      aria-label="Main Navigation"
+    >
       <div className={styles.logo}>
         <Link href="/">Logo</Link>
       </div>
