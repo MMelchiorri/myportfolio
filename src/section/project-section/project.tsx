@@ -2,25 +2,57 @@
 
 import React from "react";
 import styles from "./project.module.css";
+import { Box, Paper, Typography } from "@mui/material";
+import Image from "next/image";
 
 const Project: React.ElementType = () => {
   return (
     <div className={styles.container} id={"myProject"}>
       <div className={styles.projectContainer}>
-        <div>
-          <h2 className={styles.projectTitle}>Facebook Clone</h2>
-          <p className={styles.projectDescription}>
-            This is a brief description of my project. It showcases the skills
-            and technologies I have learned.
-          </p>
-        </div>
-        <div>
-          <h2 className={styles.projectTitle}>Todo App</h2>
-          <p className={styles.projectDescription}>
-            This is a brief description of my project. It showcases the skills
-            and technologies I have learned.
-          </p>
-        </div>
+        <Box>
+          <Paper className={styles.containerPaper}>
+            <Typography variant={"h3"}>Facebook Clone</Typography>
+            <div style={{ display: "flex" }}>
+              <Typography
+                variant={"body2"}
+                className={styles.projectDescription}
+              >
+                Facebook UI Clone – Replica front-end di Facebook creata con
+                HTML, CSS, JS e Axios. Simula interazioni API per esercitarsi
+                nell’integrazione di dati anche senza backend.
+              </Typography>
+              <Image
+                src="/hero-image.png"
+                alt="Hero Image"
+                className={styles.heroImage}
+                width={400}
+                height={365}
+              />
+            </div>
+          </Paper>
+        </Box>
+        <Box>
+          <Paper className={styles.containerPaper}>
+            <Typography variant={"h3"}>Todo App</Typography>
+            <div style={{ display: "flex" }}>
+              <Typography
+                variant={"body2"}
+                className={styles.projectDescription}
+              >
+                Facebook UI Clone – Replica front-end di Facebook creata con
+                HTML, CSS, JS e Axios. Simula interazioni API per esercitarsi
+                nell’integrazione di dati anche senza backend.
+              </Typography>
+              <Image
+                src="/hero-image.png"
+                alt="Hero Image"
+                className={styles.heroImage}
+                width={400}
+                height={365}
+              />
+            </div>
+          </Paper>
+        </Box>
       </div>
     </div>
   );
