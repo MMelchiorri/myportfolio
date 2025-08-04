@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.information{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
