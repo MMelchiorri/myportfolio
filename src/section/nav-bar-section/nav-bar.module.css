@@ -9,3 +9,31 @@
     display: flex;
     justify-content: space-between;
 }
+
+.link {
+    color: #1E3A8A;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #1E3A8A;
+    transition: width 0.3s ease;
+}
+
+.link:hover {
+    color: #2563EB;
+}
+
+.link:hover::after {
+    width: 100%;
+}

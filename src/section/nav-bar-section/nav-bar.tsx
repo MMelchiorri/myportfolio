@@ -12,12 +12,20 @@ const NavBar: React.FC = () => {
       aria-label="Main Navigation"
     >
       <div className={styles.logo}>
-        <Link href="/">Logo</Link>
+        <Link href="/" className={styles.link}>
+          Logo
+        </Link>
       </div>
       <div className={styles.information}>
-        <Link href="#heroSection">About</Link>
-        <Link href="#myProject">My Project</Link>
-        <Link href="#contact">Contact</Link>
+        <Link href="#heroSection" className={styles.link}>
+          About
+        </Link>
+        <Link href="#myProject" className={styles.link}>
+          My Project
+        </Link>
+        <Link href="#contact" className={styles.link}>
+          Contact
+        </Link>
       </div>
     </div>
   );
