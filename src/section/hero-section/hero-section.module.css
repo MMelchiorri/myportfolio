@@ -28,6 +28,11 @@
     margin-bottom: 1rem;
 }
 
+.heroImage{
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 
 @media screen and (max-width: 768px) {
     .heroSection {

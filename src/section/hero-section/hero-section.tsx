@@ -71,7 +71,7 @@ export default function HeroSection() {
           alt="Hero Image"
           className={styles.heroImage}
           width={400}
-          height={400}
+          height={365}
         />
       </Box>
     </Box>
