@@ -1,20 +1,14 @@
 .container{
     display: flex;
-    justify-content: space-between;
-    margin: 20px;
     flex-direction: column;
-    align-items: center;
     text-align: center;
 }
 
-
-
-.containerPaper{
-    width: 100%;
+.projectContainer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 4rem; /* spazio sotto il primo blocco */
 }
 
 .heroImageLeft {

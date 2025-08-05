@@ -8,6 +8,8 @@ import WorkIcon from "@mui/icons-material/Work";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const NavBar: React.FC = () => {
   const [menuOpen, setMenuOpen] = React.useState(false);
@@ -33,8 +35,19 @@ const NavBar: React.FC = () => {
         <Link href="#myProject" className={styles.link} onClick={toggleMenu}>
           <WorkIcon style={{ marginRight: "0.5rem" }} /> My Projects
         </Link>
-        <Link href="#contact" className={styles.link} onClick={toggleMenu}>
-          <ContactMailIcon style={{ marginRight: "0.5rem" }} /> Contact
+        <Link
+          className={styles.link}
+          href="https://www.linkedin.com/in/marco-melchiorri/"
+          target="_blank"
+        >
+          <LinkedInIcon />
+        </Link>
+        <Link
+          className={styles.link}
+          href={"https://github.com/MMelchiorri"}
+          target={"_blank"}
+        >
+          <GitHubIcon />
         </Link>
       </div>
     </nav>
