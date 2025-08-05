@@ -27,7 +27,7 @@ const Project: React.ElementType = () => {
           </Typography>
 
           <a
-            href="https://github.com/tuo-nome/todo-app"
+            href="https://github.com/MMelchiorri/facebook_clone"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.visitButton}
@@ -45,7 +45,7 @@ const Project: React.ElementType = () => {
           </Typography>
 
           <a
-            href="https://github.com/tuo-nome/todo-app"
+            href="https://github.com/MMelchiorri/todo_app_fe"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.visitButton}

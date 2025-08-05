@@ -11,6 +11,13 @@
     margin-bottom: 4rem; /* spazio sotto il primo blocco */
 }
 
+.projectDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .heroImageLeft {
     transform: perspective(1000px) rotateY(20deg) rotateX(5deg);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
@@ -30,13 +37,15 @@
     display: inline-block;
     margin-top: 1.5rem;
     padding: 0.8rem 2rem;
-    background-color: #00ff66;
+    background-color: #2E7D32;
     color: black;
     font-weight: bold;
     border-radius: 12px;
     text-decoration: none;
     transition: 0.3s ease;
-    box-shadow: 0 0 20px #00ff66;
+    box-shadow:   0 0 8px rgba(0, 255, 102, 0.4),
+    0 0 16px rgba(0, 255, 102, 0.6),
+    0 0 24px rgba(0, 255, 102, 0.8);
     font-family: 'Orbitron', sans-serif;
 }
 
