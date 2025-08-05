@@ -18,11 +18,31 @@
     transition: transform 0.5s ease;
 }
 
+
 .heroImageRight {
     transform: perspective(1000px) rotateY(-20deg) rotateX(5deg);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     transition: transform 0.5s ease;
+}
+
+.visitButton {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 2rem;
+    background-color: #00ff66;
+    color: black;
+    font-weight: bold;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    box-shadow: 0 0 20px #00ff66;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.visitButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 35px #00ff66, 0 0 60px #00ff66;
 }
 
 @media screen and (max-width: 768px) {
@@ -41,6 +61,14 @@
     .projectContainer {
         flex-direction: column;
         align-items: center;
+    }
+
+    .heroImageLeft,
+    .heroImageRight {
+        margin: 30px;
+        width: 80%;
+        height: auto;
+        transform: perspective(600px) rotateY(2deg) rotateX(2deg);
     }
 
 }

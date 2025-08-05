@@ -19,19 +19,43 @@ const Project: React.ElementType = () => {
             height={365}
           />
         </Grid>
-        <Grid size={{ md: 6 }}>
-          <Typography variant={"h4"} style={{ whiteSpace: "nowrap" }}>
-            Facebook Clone
+        <Grid size={{ md: 6 }} className={styles.projectDetails}>
+          <Typography variant="body1" className={styles.projectDescription}>
+            Applicazione full-stack per la gestione delle attività, sviluppata
+            con Node.js, Express, React, MongoDB e Axios. Completamente
+            containerizzata con Docker.
           </Typography>
+
+          <a
+            href="https://github.com/tuo-nome/todo-app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.visitButton}
+          >
+            Visita Repo →
+          </a>
         </Grid>
       </Grid>
       <Grid container>
-        <Grid size={{ md: 6 }}>
-          <Typography variant={"h3"}>Todo App</Typography>
+        <Grid size={{ md: 6 }} className={styles.projectDetails}>
+          <Typography variant="body1" className={styles.projectDescription}>
+            Applicazione full-stack per la gestione delle attività, sviluppata
+            con Node.js, Express, React, MongoDB e Axios. Completamente
+            containerizzata con Docker.
+          </Typography>
+
+          <a
+            href="https://github.com/tuo-nome/todo-app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.visitButton}
+          >
+            Visita Repo →
+          </a>
         </Grid>
         <Grid size={{ md: 6 }}>
           <Image
-            src="/hero-image.png"
+            src="/img_1.png"
             alt="Todo App Screenshot"
             className={styles.heroImageRight}
             width={400}
