@@ -1,4 +1,4 @@
-import ProjectCard from './ProjectCard'
+import ProjectCard from './project-card'
 import { Stack } from '@mui/material'
 
 const projects = [
