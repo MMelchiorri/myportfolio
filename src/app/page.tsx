@@ -1,6 +1,6 @@
-import HeroSection from "@/section/hero-section/hero-section";
-import NavBar from "@/section/nav-bar-section/nav-bar";
-import Project from "@/section/project-section/project";
+import HeroSection from '@/section/hero-section/hero-section'
+import NavBar from '@/section/nav-bar-section/nav-bar'
+import Project from '@/section/project-section/project'
 
 export default function Home() {
   return (
@@ -9,5 +9,5 @@ export default function Home() {
       <HeroSection />
       <Project />
     </>
-  );
+  )
 }

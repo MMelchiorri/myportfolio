@@ -1,21 +1,21 @@
-"use client";
+'use client'
 
-import React from "react";
-import styles from "./nav-bar.module.css";
-import Link from "next/link";
-import HomeIcon from "@mui/icons-material/Home";
-import WorkIcon from "@mui/icons-material/Work";
-import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from "@mui/icons-material/Close";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
+import React from 'react'
+import styles from './nav-bar.module.css'
+import Link from 'next/link'
+import HomeIcon from '@mui/icons-material/Home'
+import WorkIcon from '@mui/icons-material/Work'
+import MenuIcon from '@mui/icons-material/Menu'
+import CloseIcon from '@mui/icons-material/Close'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import GitHubIcon from '@mui/icons-material/GitHub'
 
 const NavBar: React.FC = () => {
-  const [menuOpen, setMenuOpen] = React.useState(false);
+  const [menuOpen, setMenuOpen] = React.useState(false)
 
   const toggleMenu = () => {
-    setMenuOpen((prev) => !prev);
-  };
+    setMenuOpen((prev) => !prev)
+  }
 
   return (
     <nav className={styles.container}>
@@ -26,13 +26,13 @@ const NavBar: React.FC = () => {
       </div>
 
       <div
-        className={`${styles.information} ${menuOpen ? styles.showMenu : ""}`}
+        className={`${styles.information} ${menuOpen ? styles.showMenu : ''}`}
       >
         <Link href="#heroSection" className={styles.link} onClick={toggleMenu}>
-          <HomeIcon style={{ marginRight: "0.5rem" }} /> About
+          <HomeIcon style={{ marginRight: '0.5rem' }} /> About
         </Link>
         <Link href="#myProject" className={styles.link} onClick={toggleMenu}>
-          <WorkIcon style={{ marginRight: "0.5rem" }} /> My Projects
+          <WorkIcon style={{ marginRight: '0.5rem' }} /> My Projects
         </Link>
         <Link
           className={styles.link}
@@ -43,14 +43,14 @@ const NavBar: React.FC = () => {
         </Link>
         <Link
           className={styles.link}
-          href={"https://github.com/MMelchiorri"}
-          target={"_blank"}
+          href={'https://github.com/MMelchiorri'}
+          target={'_blank'}
         >
           <GitHubIcon />
         </Link>
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavBar

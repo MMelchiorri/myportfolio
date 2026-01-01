@@ -1,25 +1,25 @@
-"use client";
+'use client'
 
-import React, { useEffect, useRef } from "react";
-import styles from "./hero-section.module.css";
-import { Box, Paper, Typography } from "@mui/material";
-import Image from "next/image";
+import React, { useEffect, useRef } from 'react'
+import styles from './hero-section.module.css'
+import { Box, Paper, Typography } from '@mui/material'
+import Image from 'next/image'
 
 export default function HeroSection() {
-  const titleRef = useRef<HTMLHeadingElement>(null);
+  const titleRef = useRef<HTMLHeadingElement>(null)
 
   useEffect(() => {
-    const text = titleRef.current?.textContent || "";
-    titleRef.current!.textContent = "";
+    const text = titleRef.current?.textContent || ''
+    titleRef.current!.textContent = ''
 
-    [...text].forEach((char, index) => {
+    ;[...text].forEach((char, index) => {
       setTimeout(() => {
         if (titleRef.current) {
-          titleRef.current.textContent += char;
+          titleRef.current.textContent += char
         }
-      }, index * 100);
-    });
-  }, []);
+      }, index * 100)
+    })
+  }, [])
 
   return (
     <Box className={styles.heroSection}>
@@ -28,23 +28,23 @@ export default function HeroSection() {
           className={styles.heroCard}
           elevation={3}
           sx={{
-            padding: "2rem",
-            borderLeft: "6px solid #134E4A",
-            backgroundColor: "#ffffff",
-            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.05)",
+            padding: '2rem',
+            borderLeft: '6px solid #134E4A',
+            backgroundColor: '#ffffff',
+            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.05)',
           }}
         >
           <Typography
             variant="h4"
             ref={titleRef}
             className={styles.heroTitle}
-            id={"heroSection"}
+            id={'heroSection'}
             sx={{
-              fontFamily: "Montserrat-regular",
-              color: "#134E4A",
-              marginBottom: "1rem",
+              fontFamily: 'Montserrat-regular',
+              color: '#134E4A',
+              marginBottom: '1rem',
               fontWeight: 600,
-              fontSize: "2rem",
+              fontSize: '2rem',
             }}
           >
             Benvenuti.
@@ -53,8 +53,8 @@ export default function HeroSection() {
           <Typography
             className={styles.heroSubtitle}
             sx={{
-              fontFamily: "var(--font-inter)",
-              color: "#333333",
+              fontFamily: 'var(--font-inter)',
+              color: '#333333',
               lineHeight: 1.7,
             }}
           >
@@ -76,5 +76,5 @@ export default function HeroSection() {
         />
       </Box>
     </Box>
-  );
+  )
 }
